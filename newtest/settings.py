@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'newtest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2	',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'dcemse6mcjhbg',
         'USER': 'fbjvcehaphbigv',
     }
