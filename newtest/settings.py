@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'newtest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djangofresh',
+        'NAME': 'dajngofresh',
         'USER': 'postgres',
         'PASSWORD': '3436',
         'HOST':'localhost',
