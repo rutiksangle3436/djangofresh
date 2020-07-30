@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +26,7 @@ SECRET_KEY = 'mj2gy!o5ak_gle^**3fuhrbxgly#0ag^5x5bz6)fa1h1_0*$(a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['enigmatic-inlet-03936.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -76,9 +76,11 @@ WSGI_APPLICATION = 'newtest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'dcemse6mcjhbg',
-        'USER': 'fbjvcehaphbigv',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangofresh',
+        'USER': 'postgres',
+        'PASSWORD': '3436',
+        'HOST':'localhost',
     }
 }
 
