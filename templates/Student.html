@@ -37,9 +37,10 @@
             width: 100%;
         }
         
-        h1 {
+        h1,
+        h3 {
             text-align: center;
-            fone-size: 18;
+            font-size: 18;
         }
         
         button:hover {
@@ -72,7 +73,7 @@
 </head>
 
 <body>
-    <form onsubmit="return(validateForm())" action="register" method="post">
+    <form onsubmit="return(validateForm())" action="done" method="post">
         {% csrf_token %}
         <h1>Student Registration Form</h1>
         <div class="formcontainer">
