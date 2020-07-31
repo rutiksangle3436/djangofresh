@@ -16,8 +16,11 @@ def reg(request):
         email = request.POST['email']
         password = request.POST['password']
 
-        if User.objects.filter(email=email).exists():
+        if User.objects.filter(email=email).exists() :
             return render(request,'Student.html',{'status':"EMAIL ALREADY EXISTS"})    
+        elif User.objects.filter(username=username).exists():
+            return render(request,'Student.html',{'status':"USERNAME ALREADY EXISTS"})    
+
         else:    
             user = User.objects.create_user(username=username,email=email,password=password,first_name=first_name,last_name=last_name)
 
