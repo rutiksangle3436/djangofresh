@@ -7,11 +7,14 @@ from .models import Destination
 
 
 # Create your views here..
-def home(request):
-    return render(request,'home.html')
+def stud(request):
+    return render(request,'Student.html')
 
 def mult(request):
-    dests = Destination.objects.all()
+    var1 = int(request.GET['num1'])
+    var2 = int(request.GET['num2'])
+    summ = var1 + var2
+    
 
 
-    return render(request,'mul.html',{'dests':dests})
+    return render(request,'mul.html',{'result':summ})

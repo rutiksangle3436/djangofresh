@@ -26,7 +26,7 @@ SECRET_KEY = 'mj2gy!o5ak_gle^**3fuhrbxgly#0ag^5x5bz6)fa1h1_0*$(a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['enigmatic-inlet-03936.herokuapp.com']
+ALLOWED_HOSTS = ['enigmatic-inlet-03936.herokuapp.com','127.0.0.1']
 
 
 # Application definition
