@@ -27,4 +27,4 @@ def reg(request):
         user.save()
         print("user created")
 
-        return HttpResponse("DONE")
+        return redirect("/")
